@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px; /* Reduced from 100px to 50px */
+    background: linear-gradient(135deg, #eea778, #f56c4a);
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 36px; /* Reduced from 48px to 36px */
+    font-weight: 700;
+    margin-bottom: 15px; /* Reduced from 20px to 15px */
+}
+
+.hero p {
+    font-size: 18px; /* Reduced from 20px to 18px */
+    margin-bottom: 20px; /* Reduced from 30px to 20px */
+}
+
+.cta-button {
+    padding: 12px 25px; /* Slightly reduced padding */
+    background-color: #fff;
+    color: #e76747;
+    border-radius: 50px;
+    font-size: 16px; /* Reduced from 18px to 16px */
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f18237;
+    color: #fff;
+}
+
+/* Search Bar Section */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: -30px auto 50px auto;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 500px;
+    border: 2px solid #ff6600;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ee7b2e;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #fa4e23;
+}
+
+/* Promotional Banner Section */
+.promo-banner {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+}
+
+.promo-banner h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.promo-banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.promo-button {
+    padding: 12px 25px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.promo-button:hover {
+    background-color: #fff;
+    color: #ff6600;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.product-item img {
+    max-width: 100%; /* Ensures the image doesn't overflow the container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block;
+    margin: 0 auto 15px auto; /* Centers the image and adds margin below */
+    border-radius: 5px; /* Adds slight rounding to match the container */
+}
